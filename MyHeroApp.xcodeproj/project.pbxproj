@@ -13,6 +13,12 @@
 		EB05C0E9273A4701001D0600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB05C0E7273A4701001D0600 /* Main.storyboard */; };
 		EB05C0EB273A4704001D0600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB05C0EA273A4704001D0600 /* Assets.xcassets */; };
 		EB05C0EE273A4704001D0600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB05C0EC273A4704001D0600 /* LaunchScreen.storyboard */; };
+		EB05C0F8273A4808001D0600 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05C0F6273A4808001D0600 /* HeroTableViewCell.swift */; };
+		EB05C0F9273A4808001D0600 /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB05C0F7273A4808001D0600 /* HeroTableViewCell.xib */; };
+		EB05C103273A4A9F001D0600 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05C102273A4A9F001D0600 /* Hero.swift */; };
+		EB05C106273A4AB1001D0600 /* DummyHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05C105273A4AB1001D0600 /* DummyHeroes.swift */; };
+		EB05C10A273A4F5F001D0600 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05C108273A4F5F001D0600 /* DetailViewController.swift */; };
+		EB05C10B273A4F5F001D0600 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB05C109273A4F5F001D0600 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		EB05C0EA273A4704001D0600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB05C0ED273A4704001D0600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB05C0EF273A4704001D0600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB05C0F6273A4808001D0600 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
+		EB05C0F7273A4808001D0600 /* HeroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
+		EB05C102273A4A9F001D0600 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		EB05C105273A4AB1001D0600 /* DummyHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHeroes.swift; sourceTree = "<group>"; };
+		EB05C108273A4F5F001D0600 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EB05C109273A4F5F001D0600 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		EB05C0E0273A4701001D0600 /* MyHeroApp */ = {
 			isa = PBXGroup;
 			children = (
-				EB05C0E1273A4701001D0600 /* AppDelegate.swift */,
-				EB05C0E3273A4701001D0600 /* SceneDelegate.swift */,
-				EB05C0E5273A4701001D0600 /* ViewController.swift */,
-				EB05C0E7273A4701001D0600 /* Main.storyboard */,
+				EB05C0FE273A4A33001D0600 /* Base */,
+				EB05C101273A4A64001D0600 /* Model */,
+				EB05C0FB273A4A14001D0600 /* Controller */,
+				EB05C100273A4A49001D0600 /* View */,
 				EB05C0EA273A4704001D0600 /* Assets.xcassets */,
-				EB05C0EC273A4704001D0600 /* LaunchScreen.storyboard */,
 				EB05C0EF273A4704001D0600 /* Info.plist */,
 			);
 			path = MyHeroApp;
+			sourceTree = "<group>";
+		};
+		EB05C0FB273A4A14001D0600 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB05C0E5273A4701001D0600 /* ViewController.swift */,
+				EB05C0F6273A4808001D0600 /* HeroTableViewCell.swift */,
+				EB05C108273A4F5F001D0600 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB05C0FE273A4A33001D0600 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EB05C0E1273A4701001D0600 /* AppDelegate.swift */,
+				EB05C0E3273A4701001D0600 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EB05C100273A4A49001D0600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB05C109273A4F5F001D0600 /* DetailViewController.xib */,
+				EB05C0E7273A4701001D0600 /* Main.storyboard */,
+				EB05C0F7273A4808001D0600 /* HeroTableViewCell.xib */,
+				EB05C0EC273A4704001D0600 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB05C101273A4A64001D0600 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB05C102273A4A9F001D0600 /* Hero.swift */,
+				EB05C105273A4AB1001D0600 /* DummyHeroes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +176,9 @@
 			files = (
 				EB05C0EE273A4704001D0600 /* LaunchScreen.storyboard in Resources */,
 				EB05C0EB273A4704001D0600 /* Assets.xcassets in Resources */,
+				EB05C10B273A4F5F001D0600 /* DetailViewController.xib in Resources */,
 				EB05C0E9273A4701001D0600 /* Main.storyboard in Resources */,
+				EB05C0F9273A4808001D0600 /* HeroTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB05C106273A4AB1001D0600 /* DummyHeroes.swift in Sources */,
+				EB05C103273A4A9F001D0600 /* Hero.swift in Sources */,
 				EB05C0E6273A4701001D0600 /* ViewController.swift in Sources */,
 				EB05C0E2273A4701001D0600 /* AppDelegate.swift in Sources */,
 				EB05C0E4273A4701001D0600 /* SceneDelegate.swift in Sources */,
+				EB05C0F8273A4808001D0600 /* HeroTableViewCell.swift in Sources */,
+				EB05C10A273A4F5F001D0600 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
